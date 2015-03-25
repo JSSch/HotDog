@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>HotDogAssignment by JSSch</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/JSSch/HotDogAssignment">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>HotDogAssignment</h1>
+            <h2>Assignment 9 for CIS 411</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/JSSch/HotDogAssignment/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/JSSch/HotDogAssignment/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>This is a silly name for a project, yes?  I guess it was my fault for saying hot dogs in class...</p>
+
+<p>So this project mostly mirrored what we did for the MVC tutorial.  I started off with models that captured the attributes of the wireframe provided.  I knew that there were two components that could be updated for this profile, those being the edit button for the whole profile itself, and the list of recent hot dogs.  I decided I would make a view model for the list and use the edit method in the controller for the profile.  I would find that passing the list object through the edit method would be my first obstacle. I eventually found I needed to just create another view model.  That was tedious due to all the attributes and having two controllers.</p>
+
+<p>I then got fed up looking at my date time showing the time, so I looked into changing the format using data annotations (again, like in the MVC tutorial we did).  That took a bit to figure out where to implement, but it went fine after that.</p>
+
+<p>I guess I'm going to go eat some hot dogs when I get home tonight.  All beef kosher franks if I can help it.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/JSSch">JSSch</a> can be found on <a href="https://github.com/JSSch/HotDogAssignment">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
