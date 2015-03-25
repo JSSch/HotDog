@@ -15,6 +15,21 @@ namespace HotDogAssignment.Controllers
             return View(Profiles.Profile);
         }
 
+        public ActionResult AddDog()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddDog(AddHotDogViewModel model)
+        {
+            string HotDogTitle = model.DogTitle;
+            string HotDogDate = model.DateOfDog;
+            string FullDog = HotDogTitle + " (" + HotDogDate + ")";
+            Profiles.Profile.HotDogs.Add(FullDog);
+            return RedirectToAction("Index");
+        }
+
         // GET: Profile/Details/5
         public ActionResult Details(int id)
         {

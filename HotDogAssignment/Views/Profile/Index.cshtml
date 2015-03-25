@@ -19,7 +19,13 @@
     <div class="col-sm-9">
         <div style="font-size:20px"><b>@Html.DisplayFor(model => model.Name)</b></div>
         <div>@Html.DisplayFor(model => model.Bio)</div>
-        
+        <div>@Html.ActionLink("ADD DOGS", "AddDog")</div>
+        <ul>
+            @foreach (var hd in Model.HotDogs)
+            {
+                <li>@Html.DisplayFor(model => hd)</li>
+            }
+        </ul>
     </div>
 </div>
 
