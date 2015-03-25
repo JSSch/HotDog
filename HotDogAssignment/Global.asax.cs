@@ -33,7 +33,7 @@ namespace HotDogAssignment
                 HotDogs = new List<string>() { "Lonnie's Chicago Dog (2/23/15)" , "Ollie's Trolley Hot Dog (2/10/15)"}
             };
             
-            Profiles.Profile.Add(StartDog);
+            Profiles.Profile = StartDog;
         }
     }
 }

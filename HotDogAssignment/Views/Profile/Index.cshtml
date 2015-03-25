@@ -1,0 +1,63 @@
+﻿@model HotDogAssignment.Models.HotDogLover
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfilePic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FavoriteDog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastDog)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bio)
+        </th>
+        <th></th>
+    </tr>
+
+@*@foreach (var item in Model) {*@
+    <tr>
+        <td>
+            <img src=@Model.ProfilePic class="img-responsive" alt="delicious">
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.FavoriteDog)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.LastDog)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Bio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=model.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=model.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=model.PrimaryKey */ })
+        </td>
+    </tr>
+
+
+</table>
