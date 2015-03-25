@@ -116,6 +116,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AddHotDogViewModel.cs" />
+    <Compile Include="Models\EditorViewModel.cs" />
     <Compile Include="Models\HotDogLover.cs" />
     <Compile Include="Models\Profiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,6 +156,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Profile\AddDog.cshtml" />
+    <Content Include="Views\Profile\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

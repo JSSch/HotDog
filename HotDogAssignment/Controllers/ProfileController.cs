@@ -59,19 +59,32 @@ namespace HotDogAssignment.Controllers
         }
 
         // GET: Profile/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit()
         {
-            return View();
+            EditorViewModel model = new EditorViewModel()
+            {
+                Bio = Profiles.Profile.Bio,
+                Date = Profiles.Profile.Date,
+                FavoriteDog = Profiles.Profile.FavoriteDog,
+                LastDog = Profiles.Profile.LastDog,
+                Name = Profiles.Profile.Name,
+                ProfilePic = Profiles.Profile.ProfilePic
+            };
+            return View(model);
         }
 
         // POST: Profile/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(EditorViewModel model)
         {
             try
             {
-                // TODO: Add update logic here
-
+                Profiles.Profile.Bio = model.Bio;
+                Profiles.Profile.Date = model.Date;
+                Profiles.Profile.FavoriteDog = model.FavoriteDog;
+                Profiles.Profile.LastDog = model.LastDog;
+                Profiles.Profile.Name = model.Name;
+                Profiles.Profile.ProfilePic = model.ProfilePic;
                 return RedirectToAction("Index");
             }
             catch
